@@ -108,7 +108,7 @@ textarea {
     justify-content: space-between;
 }
 
-align-center {
+.align-center {
     align-items: center;
 }
 
@@ -123,11 +123,11 @@ align-center {
 /*DEFAULT CLASS END*/
 
 /*DEFAULT component START*/
-.header bottom-header {
+.header .bottom-header {
     padding: 40px 0;
 }
 
-.header bottom-header .user-controls {
+.header .bottom-header .user-controls {
     margin-left: auto;
 }
 
