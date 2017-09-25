@@ -121,6 +121,10 @@ textarea {
     display: inline-block;
 }
 
+.blue-color {
+    color: #34404b;
+}
+
 /*DEFAULT CLASS END*/
 
 /*DEFAULT component START*/
@@ -130,6 +134,63 @@ textarea {
 
 .header .bottom-header .user-controls {
     margin-left: auto;
+    position: relative;
+    margin-bottom: -16px;
+}
+
+.header .bottom-header .user-controls a + a {
+    margin-left: 30px;
+}
+
+.bottom-header .user-controls .index-purchases {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    top: -16px;
+    right: 3px;
+    border-radius: 50%;
+    background-color: #34404b;
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+}
+
+.bottom-header .header-nav {
+    margin-left: 85px;
+    font-size: 16px;
+}
+
+.bottom-header .header-nav a:hover {
+    color: #ff5912;
+}
+
+.bottom-header .header-nav a + a {
+    margin-left: 40px;
+}
+
+.header .top-header {
+    padding: 24px 0;
+    border-bottom: 1px solid #edeff1;
+}
+
+.header .top-header .icon {
+    margin-right: 10px;
+}
+
+.header .top-header span {
+    margin-right: 20px;
+}
+
+.header .top-header .user-contacts {
+    margin-left: auto;
+}
+
+.top-header .user-contacts a + a {
+    margin-left: 15px;
+}
+
+.top-header .user-contacts a i:hover{
+    color: #ff5912;
 }
 
 /*DEFAULT component END*/
