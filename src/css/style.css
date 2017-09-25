@@ -183,6 +183,7 @@ textarea {
 
 .header .top-header .user-contacts {
     margin-left: auto;
+    font-size: 13px;
 }
 
 .top-header .user-contacts a + a {
