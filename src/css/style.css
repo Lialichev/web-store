@@ -98,6 +98,19 @@ textarea {
     resize: vertical;
 }
 
+label {
+    margin: 0;
+}
+
+input, button, select {
+    border: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
 /*Style reset end*/
 
 /*DEFAULT CLASS START*/
@@ -133,11 +146,11 @@ textarea {
     background-color: #2fd967;
 }
 
-.light-orange-bg{
+.light-orange-bg {
     background-color: #ff9060;
 }
 
-.orange-bg{
+.orange-bg {
     background-color: #ff5912;
 }
 
@@ -315,6 +328,51 @@ textarea {
     border-radius: 50%;
 }
 
+.subscribe-form {
+    padding: 35px 45px;
+}
+
+.aside-section {
+    padding: 40px;
+}
+
+.aside-section + .aside-section {
+    margin-top: 30px;
+}
+
+.ui-widget.ui-widget-content {
+    border: none;
+    background-color: #edf0f2;
+    border-radius: 0;
+    height: 3px;
+}
+
+.min-value,
+.max-value {
+    position: absolute;
+    bottom: 200%;
+    color: #34404b;
+}
+
+.add-range-value {
+    margin-top: 30px;
+}
+
+.ui-slider .ui-slider-range {
+    background-color: #34404b;
+}
+
+.ui-widget-content .ui-state-default.ui-slider-handle {
+    width: 11px;
+    height: 11px;
+    background-color: #34404b;
+    border-radius: 50%;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+    outline: none;
+}
+
 /*DEFAULT component END*/
 
 .sale-carousel {
@@ -359,27 +417,60 @@ textarea {
 
 .kit {
     padding: 20px 60px;
-    border:1px solid #eaedef;
+    border: 1px solid #eaedef;
 }
 
-.sales-block{
+.sales-block {
     position: relative;
 }
 
 .sales-block .light-orange-bg,
-.sales-block .orange-bg{
+.sales-block .orange-bg {
     display: inline-block;
     width: 50px;
     height: 60px;
 }
 
-.sales-block .light-orange-bg{
+.sales-block .light-orange-bg {
     transform: rotate(-45deg);
 }
 
-.sales-block .orange-bg{
+.sales-block .orange-bg {
     transform: rotate(45deg);
     position: absolute;
     left: 0;
     top: 0;
+}
+
+.category-wrap {
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    font-size: 16px;
+    color: #34404b;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 4px solid #edeff2;
+    background-color: #edeff2;
+    margin-right: 13px;
+}
+
+input[type="checkbox"]:checked + label {
+    color: #ff5912;
+}
+
+input[type="checkbox"]:checked + label::before {
+    border-color: #ff5912;
 }
