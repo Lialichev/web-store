@@ -162,8 +162,17 @@ button {
     color: #34404b;
 }
 
+.dim-color {
+    color: #e9ecf3;
+}
+
 .orange-text {
     color: #ff5912;
+}
+
+.default-description {
+    color: #495662;
+    font-size: 16px;
 }
 
 /*DEFAULT CLASS END*/
@@ -373,6 +382,24 @@ button {
     outline: none;
 }
 
+.btn {
+    padding: 18px 30px;
+    border: none;
+    border-radius: 0;
+    line-height: normal;
+}
+
+.btn-default:hover {
+    opacity: .9;
+    color: #fff;
+    background-color: #ff5912;
+}
+
+.btn-default {
+    color: #fff;
+    background-color: #ff5912;
+}
+
 /*DEFAULT component END*/
 
 .sale-carousel {
@@ -415,6 +442,41 @@ button {
     height: 36px;
 }
 
+.first-description-carousel {
+    font-family: 'Harmonia_semibold';
+    font-size: 18px;
+}
+
+.item-carousel-description .default-description {
+    margin-top: 15px;
+}
+
+.carousel-inner .down-wrap {
+    font-family: 'Harmonia_semibold';
+    font-size: 18px;
+    margin-top: 60px;
+}
+
+.carousel-inner .down-wrap .price-carousel {
+    margin-right: 30px;
+}
+
+.new-arrivals .default-description {
+    margin-bottom: 80px;
+}
+
+.next-arrivals {
+    margin-top: 80px;
+    padding: 25px 0;
+}
+
+.next-arrivals span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
 .kit {
     padding: 20px 60px;
     border: 1px solid #eaedef;
@@ -440,6 +502,180 @@ button {
     position: absolute;
     left: 0;
     top: 0;
+}
+
+.sales-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #ffffff;
+    font-family: 'Harmonia_italic';
+}
+
+.sales-text .sales-text-bold {
+    font-size: 18px;
+    font-family: 'Harmonia_black';
+    line-height: 24px;
+}
+
+.description-sales .default-description {
+    font-size: 12px;
+}
+
+.description-sales .title {
+    font-size: 22px;
+    margin-bottom: 13px;
+}
+
+.kit .price-sales span {
+    font-size: 32px;
+    font-family: 'Harmonia_black';
+}
+
+.kit .price-sales i {
+    margin-right: 15px;
+}
+
+.kit .price-sales span + span {
+    font-size: 20px;
+}
+
+.area {
+    height: 104px;
+    padding: 30px 0;
+    border: 1px solid #eaedef;
+}
+
+.area span {
+    font-size: 16px;
+}
+
+.area p {
+    margin-top: 15px;
+    color: rgba(52, 64, 75, .4);
+    letter-spacing: .6em;
+}
+
+.subscribe-form {
+    padding: 37px 44px;
+}
+
+.subscribe-form .title {
+    font-size: 18px;
+}
+
+.subscribe-form .subscribe-description span {
+    margin-bottom: 0;
+}
+
+.subscribe-form .subscribe-description span + span {
+    margin-left: 25px;
+    font-size: 14px;
+    font-family: 'Harmonia_italic';
+}
+
+.subscribe-form form label {
+    margin-right: 10px;
+}
+
+.subscribe-form form input {
+    width: 250px;
+}
+
+.best-sales .product-item {
+    height: 160px;
+    padding: 35px 30px;
+}
+
+.best-sales .product-item .item-img {
+    height: auto;
+    transition: none;
+}
+
+.best-sales .product-item .item-img img {
+    max-width: none;
+}
+
+.best-sales .product-item .item-description {
+    margin-top: 0;
+    position: relative;
+}
+
+.best-sales .product-item:hover .item-text-wrap {
+    display: none;
+}
+
+.best-sales .product-item:hover .item-title {
+    color: inherit;
+    margin-bottom: 48px;
+}
+
+.best-sales .product-item .mor-info-on-hover {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 50px;
+    transition: all .3s linear;
+    z-index: -1;
+}
+
+.best-sales .product-item .mor-info-on-hover a:hover {
+    color: #ff5912;
+}
+
+.best-sales .product-item:hover .mor-info-on-hover {
+    opacity: 1;
+    z-index: 99;
+}
+
+.best-sales .items-wrap {
+    margin-top: 80px;
+}
+
+.items-wrap .row > * {
+    margin-top: 5px;
+}
+
+footer {
+    padding: 88px 0 80px;
+    font: 14px/1 "Harmonia_regular", sans-serif;
+    line-height: 30px;
+    margin-top: 60px;
+}
+
+.footer-nav ul {
+    list-style: inherit;
+}
+
+.footer-nav ul li:hover {
+    color: #ff5912;
+}
+
+.footer-nav .first-nav {
+    margin-left: 130px;
+}
+
+.footer-nav .first-nav {
+    margin-right: 130px;
+}
+
+.footer-nav .second-nav {
+    margin-right: 70px;
+}
+
+.title-payment {
+    font-size: 16px;
+    font-family: 'Harmonia_semibold';
+}
+
+.payment-methods ul{
+    margin-top: 10px;
+}
+.payment-methods ul li + li{
+    margin-left: 10px;
 }
 
 .category-wrap {
