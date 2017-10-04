@@ -765,3 +765,28 @@ input[type="checkbox"]:checked + label {
 input[type="checkbox"]:checked + label::before {
     border-color: #ff5912;
 }
+
+/*Product slider*/
+.product-slider{
+    width: 330px;
+}
+/*product slider end*/
+
+/*Product description*/
+.size-radio input[type="radio"]{
+    display: none;
+}
+
+.size-radio{
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    user-select: none;
+}
+
+.size-radio input[type="radio"]:checked + label{
+    color: #ff5912;
+    font-size: 18px;
+}
+
+/*Product description end*/

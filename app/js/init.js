@@ -65,5 +65,13 @@ $( function() {
         range.slider( "option", "values", [ values[0] , this.value ] );
 
     });
+    //flexSlider
+    $('.flexslider').flexslider({
+        animation: "slide",
+        controlNav: "thumbnails"
+    });
+
+    //Formstyler init
+    $('.input-quantity').styler();
 
 } );
