@@ -349,6 +349,33 @@ button {
     margin-top: 30px;
 }
 
+.aside-section .range{
+    margin-top: 65px;
+}
+
+.aside-section .checkbox-group + .checkbox-group{
+    margin-top: 38px;
+}
+
+.title-aside{
+    font-family: 'Harmonia_black';
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.nav-aside li + li{
+    margin-top: 38px;
+}
+
+.nav-aside li a:hover{
+    color: #ff5912;
+}
+
+.nav-aside{
+    font-family: 'Harmonia_semibold';
+    font-size: 16px;
+}
+
 .ui-widget.ui-widget-content {
     border: none;
     background-color: #edf0f2;
@@ -398,6 +425,18 @@ button {
 .btn-default {
     color: #fff;
     background-color: #ff5912;
+}
+
+.range-input-reoup input{
+    background-color: #edf0f2;
+}
+
+.range-input-reoup label{
+    margin-right: 5px;
+}
+
+.range-input-reoup + .range-input-reoup{
+    margin-left: 15px;
 }
 
 /*DEFAULT component END*/
@@ -465,8 +504,11 @@ button {
     margin-bottom: 80px;
 }
 
-.next-arrivals {
+.new-arrivals .next-arrivals {
     margin-top: 80px;
+}
+
+.next-arrivals {
     padding: 25px 0;
 }
 
@@ -477,12 +519,16 @@ button {
     border-radius: 50%;
 }
 
-.new-arrivals .product-item .mor-info-on-hover .sizes{
+.mor-info-on-hover .sizes {
     margin-bottom: 30px;
 }
 
-.new-arrivals .product-item .mor-info-on-hover .item-controls{
+.mor-info-on-hover .item-controls {
     margin-top: 30px;
+}
+
+.mor-info-on-hover .item-controls  li + li{
+    margin-left: 28px;
 }
 
 .kit {
@@ -643,10 +689,6 @@ button {
     margin-top: 80px;
 }
 
-.items-wrap .row > * {
-    margin-top: 5px;
-}
-
 footer {
     padding: 88px 0 80px;
     font: 14px/1 "Harmonia_regular", sans-serif;
@@ -679,16 +721,21 @@ footer {
     font-family: 'Harmonia_semibold';
 }
 
-.payment-methods ul{
+.payment-methods ul {
     margin-top: 10px;
 }
-.payment-methods ul li + li{
+
+.payment-methods ul li + li {
     margin-left: 10px;
 }
 
 .category-wrap {
     padding-top: 120px;
     padding-bottom: 60px;
+}
+
+.category-wrap .product-item {
+    margin-bottom: 30px;
 }
 
 input[type="checkbox"] {
