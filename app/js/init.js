@@ -71,6 +71,9 @@ $( function() {
         controlNav: "thumbnails"
     });
 
+    //slikmenu
+    $('.header-nav').slicknav();
+
     //Formstyler init
     $('.input-quantity').styler();
 
