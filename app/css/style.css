@@ -713,7 +713,7 @@ button {
 }
 
 @media (max-width: 991px) {
-    .subscribe-form{
+    .subscribe-form {
         -webkit-flex-wrap: wrap;
             -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
@@ -721,9 +721,10 @@ button {
         -webkit-justify-content: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        padding:20px 44px;
+        padding: 20px 44px;
     }
-    .subscribe-description{
+
+    .subscribe-description {
         margin-bottom: 30px;
     }
 }
@@ -833,6 +834,69 @@ footer {
 
 .payment-methods ul li + li {
     margin-left: 10px;
+}
+
+.mobile-sidebar-btn {
+    display: none;
+    font-size: 30px;
+    color: #ff5912;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 991px) {
+    .mobile-sidebar-btn {
+        display: block;
+    }
+
+    .mobile-sidebar-btn .fa{
+        -webkit-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+    }
+
+    .mobile-sidebar-wrap {
+        position: absolute;
+        -webkit-transform: translateX(-150%);
+            -ms-transform: translateX(-150%);
+                transform: translateX(-150%);
+        z-index: 99;
+        -webkit-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+        left: 0;
+        right: 0;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        z-index: -1;
+        background-color: rgba(0, 0, 0, .4);
+        -webkit-transition: all .5s linear;
+        -o-transition: all .5s linear;
+        transition: all .5s linear;
+    }
+
+    main.show .mobile-sidebar-wrap {
+        -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+                transform: translateX(0);
+    }
+
+    main.show .overlay {
+        opacity: 1;
+        z-index: 98;
+    }
+
+    main.show .mobile-sidebar-btn .fa {
+        -webkit-transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+                transform: rotate(-180deg)
+    }
 }
 
 .category-wrap {
