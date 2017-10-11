@@ -271,6 +271,20 @@ button {
     color: #ff5912;
 }
 
+@media (max-width: 991px) {
+    .header-nav {
+        display: none;
+    }
+
+    .slicknav_menu {
+        display: block;
+    }
+
+    .header .bottom-header .user-controls {
+        margin: 0;
+    }
+}
+
 .product-item {
     font-family: 'Harmonia_bold';
     font-size: 18px;
@@ -353,6 +367,19 @@ button {
     height: 13px;
     -webkit-border-radius: 50%;
             border-radius: 50%;
+}
+
+@media (max-width: 1199px) {
+    .product-item .item-description,
+    .product-item .mor-info-on-hover {
+        padding: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .product-item {
+        margin-bottom: 30px;
+    }
 }
 
 .subscribe-form {
@@ -647,6 +674,18 @@ button {
     letter-spacing: .6em;
 }
 
+@media (max-width: 1199px) {
+    .kit {
+        padding: 20px 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    .kit {
+        margin-bottom: 30px;
+    }
+}
+
 .subscribe-form {
     padding: 37px 44px;
 }
@@ -671,6 +710,22 @@ button {
 
 .subscribe-form form input {
     width: 250px;
+}
+
+@media (max-width: 991px) {
+    .subscribe-form{
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding:20px 44px;
+    }
+    .subscribe-description{
+        margin-bottom: 30px;
+    }
 }
 
 .best-sales .product-item {
@@ -709,7 +764,6 @@ button {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 0 50px;
     -webkit-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear;
@@ -729,11 +783,21 @@ button {
     margin-top: 80px;
 }
 
+@media (max-width: 1199px) {
+    .best-sales .product-item {
+        padding: 35px 15px;
+    }
+}
+
 footer {
     padding: 88px 0 80px;
     font: 14px/1 "Harmonia_regular", sans-serif;
     line-height: 30px;
     margin-top: 60px;
+}
+
+.footer-nav {
+    white-space: nowrap;
 }
 
 .footer-nav ul {
@@ -745,15 +809,17 @@ footer {
 }
 
 .footer-nav .first-nav {
-    margin-left: 130px;
-}
-
-.footer-nav .first-nav {
-    margin-right: 130px;
+    margin: 0 130px;
 }
 
 .footer-nav .second-nav {
     margin-right: 70px;
+}
+
+@media (max-width: 1199px) {
+    .footer-nav .first-nav {
+        margin: 0 70px;
+    }
 }
 
 .title-payment {
@@ -888,7 +954,7 @@ input[type="checkbox"]:checked + label::before {
     font-family: 'Harmonia_black';
 }
 
-.product-wrap{
+.product-wrap {
     margin-bottom: 60px;
 }
 

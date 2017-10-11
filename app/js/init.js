@@ -72,7 +72,10 @@ $( function() {
     });
 
     //slikmenu
-    $('.header-nav').slicknav();
+    $('.header-nav').slicknav({
+        appendTo:`header .bottom-header .flex-container`,
+        label: ``
+    });
 
     //Formstyler init
     $('.input-quantity').styler();
