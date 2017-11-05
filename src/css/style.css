@@ -174,7 +174,11 @@ button {
     color: #495662;
     font-size: 16px;
 }
+/*DEFAULT CLASS END*/
 
+/*DEFAULT component START*/
+
+/* Slicknav */
 .slicknav_btn {
     margin: 0;
     border-radius: 0;
@@ -210,9 +214,7 @@ button {
     background-color: #fff;
 }
 
-/*DEFAULT CLASS END*/
-
-/*DEFAULT component START*/
+/* Slicknav END */
 
 .title {
     font-family: 'Harmonia_black';
@@ -280,6 +282,8 @@ button {
     margin-left: 40px;
 }
 
+/* icon */
+
 .icon-search-ic:hover {
     background-image: url(../img/sprite.png);
     background-position: -81px 0px;
@@ -322,6 +326,8 @@ button {
     height: 16px;
 }
 
+/* icon END */
+
 .header .top-header {
     padding: 24px 0;
     border-bottom: 1px solid #edeff1;
@@ -346,6 +352,20 @@ button {
 
 .top-header .user-contacts a i:hover {
     color: #ff5912;
+}
+
+@media (max-width: 991px) {
+    .header-nav {
+        display: none;
+    }
+
+    .slicknav_menu {
+        display: block;
+    }
+
+    .header .bottom-header .user-controls {
+        margin: 0;
+    }
 }
 
 @media (max-width: 479px) {
@@ -374,20 +394,6 @@ button {
         font-size: 40px;
     }
 
-}
-
-@media (max-width: 991px) {
-    .header-nav {
-        display: none;
-    }
-
-    .slicknav_menu {
-        display: block;
-    }
-
-    .header .bottom-header .user-controls {
-        margin: 0;
-    }
 }
 
 .product-item {
@@ -553,6 +559,8 @@ button {
     outline: none;
 }
 
+/* Btn */
+
 .btn {
     border: none;
     border-radius: 0;
@@ -570,6 +578,9 @@ button {
     color: #fff;
     background-color: #ff5912;
 }
+
+/* Btn END */
+
 
 .range-input-reoup input {
     background-color: #edf0f2;
@@ -945,6 +956,8 @@ button {
 
 }
 
+/* Footer */
+
 footer {
     padding: 88px 0 80px;
     font: 14px/1 "Harmonia_regular", sans-serif;
@@ -1051,6 +1064,8 @@ footer {
     }
 }
 
+/* Footer END */
+
 .category-wrap {
     padding-top: 120px;
     padding-bottom: 60px;
@@ -1089,6 +1104,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 /*Product slider*/
+
 .product-slider {
     width: 330px;
 }
